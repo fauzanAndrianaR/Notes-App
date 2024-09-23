@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #6482AD;
+}
+
+h1 {
+    text-align: center;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    background-color: #ddd;
+    padding: 20px;
+}
+
+.header-container .logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.header-container h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+
+note-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+
+.note-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #F5EDED;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 85%;
+    gap: 20px;
+    border: rgb(63, 61, 61) solid;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+.note-card:hover {
+    transform: scale(1.05);
+}
+
+.note-card h2 {
+    margin: 0 0 5px 0;
+}
+
+.note-card p {
+    font-size: 14px;
+    color: #555;
+}
+
